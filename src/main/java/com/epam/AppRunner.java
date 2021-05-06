@@ -46,6 +46,8 @@ public class AppRunner extends HttpServlet {
 		}
 		out.append("<input type=\"submit\" /></form>");
 		
+		
+		// this part of code should be before getWriter part!
 		int cntr = 0;
 		Cookie[] cookies = req.getCookies();
 		for (Cookie c : cookies) {
